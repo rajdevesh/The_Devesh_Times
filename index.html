@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Devesh Times</title>
+	<style>
+		body{
+			display: block;
+		}
+
+		#Header1{
+			color: black;
+			font-size: 75px;
+			text-align: center;
+			margin-left: 10px;
+			margin-top: 0px;
+		}
+		#divlogo{
+			margin-bottom: 0px;
+			padding-bottom: -50px;
+			margin-left: -115px;
+		}
+		h1{
+			margin-top: -160px;
+			padding-top: -100px;
+		}
+		h2{
+			font-size: 18px;
+			margin-top: 0px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		#Latest{
+			margin-right: 60px;
+			margin-top: -210px;
+			margin-left: 370px;
+
+		}
+		#date{
+			margin-right: 60px;
+			color: grey;
+			margin-top: -210px;
+			margin-left: 30px;
+		}
+		#About{
+			margin-top: -210px;
+			margin-left: 30px;
+		}
+		nav{
+			background-color: white;
+			color: black;
+			font-size: 25px;
+			word-spacing: 25px;
+			margin-top: -170px;
+			margin-left: 20px;
+		}
+		#Unbaised_News{
+			margin-top: 50px;
+			display: grid;
+			grid-template-columns: 700px 220px;
+			grid-template-rows: 500px 100px 100px 100px;
+			grid-gap: 50px;
+			text-align: right;
+
+		}
+		#divBidenHarris{
+			align-items: right;
+			margin-left: -150px;
+		}
+		#JoeKamla{
+			width: 400px;
+			text-align: left;
+			margin-left: 290px;
+		}
+		#Se{
+			text-align: left;
+		}
+		#Serum{
+			margin-left: 0px;
+		}
+		#Serum_Content{
+			text-align: left;
+			font-size: 15px;
+
+		}
+		#Top_Picks{
+			font-size: 40px;
+			margin-top: -170px;
+			height: 00px;
+			width: 1000px;
+			margin-left: 300px;
+			display: inline-block;
+		}
+		#T_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 190px;
+			margin-top: -45px;
+			margin-bottom: 40px;
+		}
+		#Opinion{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#O_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 150px;
+			margin-top: -45px;
+		}
+		#Wellbeings{
+			font-size: 40px;
+			margin-top: 100px;
+		}
+		#W_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 1100px;
+			margin-left: 200px;
+			margin-top: -45px;
+		}
+		#Column{
+			font-size: 40px;
+			margin-top: 100px;
+		}
+		#C_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 1100px;
+			margin-left: 230px;
+			margin-top: -45px;
+		}
+		#Multimedia{
+			font-size: 40px;
+			margin-top: 100px;
+		}
+		#M_HR{
+				background-color: black;
+			display: block;
+			height: 5px;
+			width: 1100px;
+			margin-left: 200px;
+			margin-top: -45px;
+		}
+		#Special{
+			font-size: 40px;
+			margin-left: 300px;
+			margin-top: 100px;
+			padding-right: 50px;
+			margin-bottom: 50px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding-bottom: 20px;
+		}
+		#TDTS_HR{
+				background-color: black;
+			display: block;
+			height: 5px;
+			width: 270px;
+			margin-left: 430px;
+			margin-top: -27px;
+		}
+		#International{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#I_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 220px;
+			margin-top: -30px;
+		}
+		#National{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#N_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 550px;
+			margin-left: 150px;
+			margin-top: -45px;
+		}
+		#States{
+			font-size: 40px;
+			margin-top: 70px;
+			margin-left: 300px;
+		}
+		#S_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 150px;
+			margin-top: -25px;
+		}
+		#Cities{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#C_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 125px;
+			margin-top: -45px;
+		}
+		#Sport{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+			align-items: left;
+		}
+		#Sp_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 200px;
+			margin-top: -25px;
+		}
+		#Business{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+
+		}
+		#B_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 200px;
+			margin-top: -25px;
+		}
+		#Science{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#Sc_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 200px;
+			margin-top: -25px;
+		}
+		#Technology{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#Tech_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 200px;
+			margin-top: -25px;
+		}
+		#Viewfinder{
+			font-size: 40px;
+			margin-top: 150px;
+			margin-left: 300px;
+		}
+		#V_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 200px;
+			margin-top: -25px;
+		}
+		#Entertainment{
+			font-size: 40px;
+			margin-top: 100px;
+			margin-left: 300px;
+		}
+		#ELS_HR{
+			background-color: black;
+			display: block;
+			height: 5px;
+			width: 500px;
+			margin-left: 580px;
+			margin-top: -25px;
+		}
+		#Footer{
+			color: black;
+			font-size: 45px;
+			text-align: center;
+			margin-left: 10px;
+			margin-top: 1100px;
+		}
+		#Flogo{
+			margin-bottom: -100px;
+			margin-left: -110px;
+			margin-top: 100px;
+		}
+		#Ftext{
+			margin-top: 100px;
+		}
+		#Covid{
+			margin-top: 20px;
+		}
+		#Covid_Text{
+			text-align: left;
+			font-size: 15px;
+		}
+		#Mamta{
+			margin-top: 20px;			
+		}
+		#Mamta_B{
+			text-align: left;
+			font-size: 15px;
+		}
+		#Protest{
+			margin-top: 20px;
+		}
+		#Tractor{
+			text-align: left;
+			font-size: 15px;
+		}
+		#TN{
+			margin-top: -180px;
+			margin-left: -460px;
+			text-align: left;
+			font-size: 15px;
+		}
+		#TN_Elect{
+			margin-top: -200px;
+			margin-left: -300px;
+			text-align: left;
+			font-size: 15px;	
+		}
+		#Sanders{
+			font-size: 21px;
+			margin-right: 100px;
+			display: inline-block;
+		}
+		#puppet{
+			margin-left: 0px;
+			margin-top: -1800px;
+			display: inline-block;
+			font-size: 21px;
+		}
+		#San{
+			font-size: 20px;
+		}
+		#special1{
+			margin-top: 20px;
+			margin-right: 30px;
+
+		}
+		#special2{
+			margin-top: -300px;
+			margin-right: 30px;
+			margin-left: 350px;
+
+		}
+		#special3{
+			margin-top: 20px;
+			margin-right: 30px;
+
+
+		}
+		#special4{
+			margin-top: -235px;
+			margin-left: 320px;
+			margin-right: 30px;
+			font-size: 20px;
+
+		}
+		#special1_text{
+			font-size: 20px;
+		}
+		#special2_text{
+			font-size: 20px;
+			margin-left: 350px;
+			margin-top: -90px;
+		}
+		#special3_text{
+			font-size: 20px;
+			margin-top: 230px;
+			margin-left: -300px;
+		}
+		#Iran{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;
+		}
+		#Nepal{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;
+		}
+		#Rajpath{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;
+		}
+		#loksabha{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;
+		}
+		#Sashikala{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;	
+		}
+		#Siddaramaiah{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;
+		}
+		#Red_Fort{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;	
+		}
+		#IAS{
+			font-size: 21px;
+			padding-top: 30px;
+			display: inline-block;
+		}
+		#FarmCric{
+			font-size: 21px;
+			padding-top: 30px;
+			margin-left: -200px;
+			display: inline-block;
+		}
+		#Gayle{
+			font-size: 21px;
+			padding-top: 30px;
+			margin-left: -200px;
+			display: inline-block;
+		}
+
+
+
+
+
+
+
+
+
+		a:link {
+ 	   text-decoration: none;
+ 	   color: black;
+		}
+
+		a:visited {
+	    text-decoration: none;
+	    color: black;
+		}
+
+		a:hover {
+    	text-decoration: none;
+    	color: black;
+		}
+
+		a:active {
+    	text-decoration: underline;
+    	color: black;
+		}
+	</style>
+	</head>
+<body>
+	<header id="Header1"><div id="divlogo"><a href="coder of the week.html"><img src="Free_Sample_By_Wix.jpg" height="105px" width="270px"></a></div><br/><h1><a href="coder of the week.html">The Devesh Times</a></h1><br/>
+	<h2><p id="Latest"><a href="coder of the week.html"> Latest News</p></a> <p id="date">Tuesday 26 January 2021</p><p id="About"><a href="coder of the week.html"> About The Editor</p></a></h2></header>
+	<nav>
+		<a href="coder of the week.html">MENU</a>
+		<a href="coder of the week.html">HOME</a>
+		<a href="coder of the week.html">NEWS</a>
+		<a href="coder of the week.html">OPINION</a>
+		<a href="coder of the week.html">BUSINESS</a>
+		<a href="coder of the week.html">SPORT</a>
+		<a href="coder of the week.html">ENTERTAINMENT</a>
+		<a href="coder of the week.html">CROSSWORD+</a>
+		<a href="coder of the week.html">SCIENCE</a><hr>
+		<a href="">TRENDING TODAY</a>
+		<a href="coder of the week.html">VACCINES</a>
+		<a href="coder of the week.html">CORONAVIRUS</a>
+		<a href="coder of the week.html">AGRICULTURE</a></nav>
+		<section id="Unbaised_News">
+		<div id="BidenHarris"><img src="Biden Harris.jpg" height="400px" width="400px"><br/><p id="JoeKamla">On Day One, Joe Biden targets Trump policies on climate, coronavirus. The 15 executive actions amount to an attempt to rewind the last four years of federal policies with striking speed.</p></div>
+		<section id="Se"><div id="Serum"><a href="Serum Inst.html"><img src="Serum_Inst..jpg" height="100px" width="200px"></div><div id="Serum_Content"><a href="Serum Inst.html">5 dead after major fire hits Serum Institute of India plant in Pune
+		Covishield manufacturing unit unharmed by blaze</div>
+		<div id="Covid"><img src="coronavirusvaccine.jpg" height="100px" width="200px"> </div><div id="Covid_Text"><a href="Vaccine.html"> NATIONAL
+		1 million COVID-19 vaccine doses given in India in just 6 days: Health Ministry</a></div>
+		<div id="Mamta"><a href="Mamta.html"><img src="Mamta B.jpg" height="100px" width="200px"><div id="Mamta_B"><a href="Mamta.html">India should have four rotating capitals including Kolkata, says Mamata</a></div></div>
+		<div id="Protest"><img src="Protest.jpg" height="100px" width="200px"></div><div id="Tractor"><a href="farmers.html">Farmers' protest | Govt issues notice to Twitter, warns of penal action </a></div></div>
+		<div id="TN"><img src="Palaniswami.jpg" height="200px" width="150px"></div><div id="TN_Elect"><a href="TN CM.html"> They will not allow the party to rule the<br/> State: Tamilnadu CM</a></div></section>
+		</section>
+
+
+
+
+		<section id="Top_Picks">Tops Picks<div id="T_HR"><hr> </div><div id="Sanders"><a href="Bernie Sanders.html">
+			<figure>
+			<img src="bernie-sanders-1200.jpg" height="150px" width="300px"><figcaption>Bernie Sanders sparks meme storm</a>   </figcaption></figure></div>
+			<div id="puppet"><a href="Tejas.html"><figure>
+			<img src="tejas.jpg"height="150px" width="300px"><figcaption>Govt formally seals ₹48,000 crore deal</figcaption></figure></a></div></section>
+
+		<section id="Special">The Devesh Times Special<div id="TDTS_HR"></div><a href="Google Ausrtalia.html"><div id="special1"><img src="special1.jpg" height="200px" width="300px"><br/></div><div id="special1_text">The DT Explains | COVID-19 vaccine <br/>side effects, nasal coronavirus vaccine,<br/> Australia & Google, and India’s <br/>road to World Test Championship finals</div><div id="special2"><a href="raw.html"><img src="special2.jpg"height="200px" width="300px"></div><div id="special2_text">The Devesh Profiles | On Houthis, Armin <br/>Laschet and Yumai</div><div id="special3"><a href="V. Shanta.html"><img src="special3.jpg"height="200px" width="300px"></div><br/><div id="special3_text">V. Shanta (1927-2021)<div id="special4"><a href="Tamilnadu.html"><img src="special4.jpg"height="200px" width="300px"><br/>What 2021 holds in store for Tamil Nadu</div></section>
+
+
+
+		<section id="International"><a href="coder of the weak.html">International</a><div id="I_HR"></div>
+			<div id="Iran"><a href="Iran.html"><figure> <img src="iran-story.jpg"><figcaption>In first for Europe, Iran envoy sentenced to 20-year prison term over bomb plot</figcaption></figure></div>
+			<div id="Nepal"><a href="Nepal.html"><figure><img src="04THAPNepalprotestors.jpg"><figcaption>Normal life paralysed in Nepal during general strike</figcaption></figure> </div>
+
+
+
+		</section>
+		<section id="National"><a href="coder of the weak.html">National</a><div id="N_HR"><hr></div>
+			<div id="Rajpath"><a href="Rajpath.html"><figure><img src="Bhoomi-Pujan.jpg"><figcaption> Rajpath redevelopment project begins</figcaption></figure></div>
+			<div id="loksabha"><a href="Delhi Government.html"><figure><img src="loksabha.jpg"><figcaption>Bill coming on Delhi government, Lieutenant Governor’s functions</figcaption></figure></div>
+
+
+
+
+
+		</section>
+		<section id="States"><a href="coder of the weak.html"> States</a><div id="S_HR"></div>
+			<div id="Sashikala"><a href="Sashikala.html"><figure><img src="04FEBTH--Sasikala.jpg"><figcaption> V.K. Sasikala was recently discharged from hospital   | Photo Credit: PTI</figcaption></figure></div>
+			<div id="Siddaramaiah"><a href="Siddaramaiah.html"><figure><img src="Siddaramaiah.jpg"><figcaption>Govt. using pandemic as ‘excuse’: Siddaramaiah</figcaption></figure></div>
+
+
+
+		</section>
+		<section id="Cities"><a href="coder of the weak.html">Cities</a><div id="C_HR"><hr></div>
+			<div id="Red_Fort"><a href="Red Fort.html"><figure><img src="redfort-police.jpg"><figcaption>Delhi Police to probe ‘international conspiracy’ to ‘defame’ India</figcaption></figure> </div>
+			<div id="IAS"><a href="IAS.html"><figure><img src="04tvkisivasankar.jpg"><figcaption>After 98 days, Sivasankar walks out of jail</figcaption></figure></div>
+
+		</section>
+		<section id="Sport"><a href="coder of the weak.html">Sport</a><div id="Sp_HR">
+			<div id="FarmCric"><a href="Farm Cricket.html"><figure><img src="CRICKET-AUS-IND.jpg"><figcaption>Virat Kohli. File.   | Photo Credit: AFP</figcaption></figure></div>
+			<div id="Gayle"><a href="gayle.html"><figure><img src="Gayle.jpg"><figcaption>West Indies' Chris Gayle. File   | Photo Credit: AP</figcaption></figure></div>
+
+
+
+		</div>
+</section>
+
+		<footer id="Footer"><div id="Flogo"><img src="Free_Sample_By_Wix.jpg" height="105px" width="170px"></div><br/><div id="Ftext">The Devesh Times</div><br/></footer>
+</body>
+</html>
